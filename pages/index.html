@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Basica Js</title>
+
+    <script type="text/javascript" src="../js/script.js"></script>
+
+    <style>
+        input[type=button],
+        input[type="text"] {
+            width: 100%;
+            height: 100%;
+            font-size: 30px;
+            background-color: rgb(240, 238, 241);
+        }
+        
+        table,
+        form {
+            width: 500px;
+            height: 400px;
+            margin: 0 auto;
+            background-color: silver;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <form name="fo">
+
+        <h1>Calculadora Basica Js</h1>
+
+        <table>
+            <tr>
+                <td colspan="5"><input type="text" name="valores" id="valores" onkeypress="return solonumeros(event)"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="7" onclick="retornar(value)"></td>
+                <td><input type="button" value="8" onclick="retornar(value)"></td>
+                <td><input type="button" value="9" onclick="retornar(value)"></td>
+                <td><input type="button" value="+" onclick="comprobar(value)"></td>
+                <td><input type="button" value="-" onclick="comprobar(value)"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="4" onclick="retornar(value)"></td>
+                <td><input type="button" value="5" onclick="retornar(value)"></td>
+                <td><input type="button" value="6" onclick="retornar(value)"></td>
+                <td><input type="button" value="*" onclick="comprobar(value)"></td>
+                <td><input type="button" value="/" onclick="comprobar(value)"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="1" onclick="retornar(value)"></td>
+                <td><input type="button" value="2" onclick="retornar(value)"></td>
+                <td><input type="button" value="3" onclick="retornar(value)"></td>
+                <td><input type="button" value="<-" onclick="eliminar()"></td>
+                <td><input type="button" value="C" onclick="eliminar_todo()"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><input type="button" value="0" onclick="retornar(value)"></td>
+                <td></td>
+                <td colspan="2"><input type="button" value="=" onclick="calcular()"></td>
+
+            </tr>
+        </table>
+
+
+
+
+    </form>
+
+
+</body>
+
+</html>
+
+</html>
